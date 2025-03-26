@@ -26,7 +26,8 @@ const NativeTokenIcon = ({ isLoading, className, type }: Props) => {
     return <Skeleton borderRadius="base" className={ className }/>;
   }
 
-  const src = type === 'secondary' ? statsQueryResult.data?.secondary_coin_image : statsQueryResult.data?.coin_image;
+  // const src = type === 'secondary' ? statsQueryResult.data?.secondary_coin_image : statsQueryResult.data?.coin_image;
+  const src = "https://phochain.org/images/logo.png";
 
   return (
     <Image
